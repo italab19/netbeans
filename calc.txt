@@ -1,0 +1,99 @@
+//initialiation
+
+       double firstnum;
+       double secondnum;
+       double result;
+       String operations;
+
+Package Calculation
+Class Calculators
+Name Calculator
+
+jtxtDisplay
+jBtn1
+
+//button 1
+
+String Enternumber = jtxtDisplay.getText() + jBtn1.getText();
+jtxtDisplay.setText(Enternumber);
+
+//button 2
+
+String Enternumber = jtxtDisplay.getText() + jBtn2.getText();
+jtxtDisplay.setText(Enternumber); 
+
+
+		.
+		.
+		.
+		.
+
+//button 11 +
+
+firstnum = Double.parseDouble(jtxtDisplay.getText());
+jtxtDisplay.setText("");
+operations = "+";
+
+// button 12 -
+
+firstnum = Double.parseDouble(jtxtDisplay.getText());
+jtxtDisplay.setText("");
+operations = "-"; 
+
+//button 13 /
+
+firstnum = Double.parseDouble(jtxtDisplay.getText());
+jtxtDisplay.setText("");
+operations = "/";   
+
+//button 14 *
+
+firstnum = Double.parseDouble(jtxtDisplay.getText());
+jtxtDisplay.setText("");
+operations = "*";    
+
+//button 15 +/-
+
+double ops = Double.parseDouble(String.valueOf(jtxtDisplay.getText()));
+ops = ops * (-1);
+jtxtDisplay.setText(String.valueOf(ops));
+
+//button 16  .
+
+String Enternumber = jtxtDisplay.getText() + jBtn16.getText();
+jtxtDisplay.setText(Enternumber);  
+
+//button 17 C
+
+String Enternumber = jtxtDisplay.getText() + jBtn17.getText();
+jtxtDisplay.setText("");  
+
+//button 18 =
+
+String answer;
+secondnum = Double.parseDouble(jtxtDisplay.getText());
+if(operations == "+"){
+result = firstnum + secondnum;
+answer = StringS.format("%.0f",result);
+jtxtDisplay.setText(answer);
+}
+else if(operations == "-"){
+result = firstnum - secondnum;
+answer = String.format("%.0f",result);
+jtxtDisplay.setText(answer);
+}
+else if(operations == "*"){
+result = firstnum * secondnum;
+answer = String.format("%.0f",result);
+jtxtDisplay.setText(answer);
+}
+else if(operations == "/"){
+result = firstnum / secondnum;
+answer = String.format("%.0f",result);
+jtxtDisplay.setText(answer);
+}
+else if(operations == "%"){
+result = firstnum % secondnum;
+answer = String.format("%.0f",result);
+jtxtDisplay.setText(answer);
+
